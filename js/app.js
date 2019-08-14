@@ -13,9 +13,8 @@ $($liArray.last().addClass('new'));
 
 //3. Add an attribute to each link so that all anchor tags open in a new tab.
 //4. Select and print the index and text of each anchor tag to the console
-$('a').each(function(index){
+//5. Refactor question #4 using the 'this' keyword.
+$('a').contents().each(function(index){
   $(this).attr('target', '_blank');
   console.log(index, this);
 });
-
-//5. Refactor question #4 using the 'this' keyword.
