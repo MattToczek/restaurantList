@@ -12,6 +12,9 @@ $($featureSpan.addClass('featured'));
 $($liArray.last().addClass('new'));
 
 //3. Add an attribute to each link so that all anchor tags open in a new tab.
+$('a').each(function(){
+  $(this).attr('target', '_blank');
+});
 
 //4. Select and print the index and text of each anchor tag to the console
 
